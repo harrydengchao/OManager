@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <form action="/management/addserverfun/" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="提交">
+        </form>
+    </body>
+</html>
